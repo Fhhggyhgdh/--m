@@ -30,7 +30,11 @@
               align="center"
               style="height: 100%"
             >
-              <van-button round size="mini" class="edit-btn"
+              <van-button
+                round
+                size="mini"
+                class="edit-btn"
+                @click="$router.push('/user')"
                 >编辑资料</van-button
               >
             </van-row>
@@ -166,10 +170,16 @@ export default {
     margin-top: 10px;
   }
 }
+.logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .login {
   display: flex;
   flex-direction: column;
-  > .van-row {
+  .van-row {
     flex: 1;
   }
   .mobile {

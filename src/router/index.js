@@ -34,6 +34,17 @@ const routes = [
   {
     path: '/search',
     component: () => import(/* webpackChunkName:"Search" */ '@/views/Search')
+  },
+  {
+    path: '/user',
+    component: () => import(/* webpackChunkName:"User" */ '@/views/User')
+  },
+  {
+    path: '/article/:articleId',
+    name: 'article',
+    component: () => import('@/views/article'),
+    // 将路由动态参数映射到组件的 props 中，更推荐这种做法
+    props: true
   }
 ]
 

@@ -1,4 +1,6 @@
 export * from './channel'
 export * from './user'
 export * from './news'
+export * from './articles'
+export * from './comments'
 export * from './search'
